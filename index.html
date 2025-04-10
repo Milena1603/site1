@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <img src="images/outfit1.jpg" alt="Аутфит 1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моден Стил и Почивки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Моден Стил и Почивки</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Начало</a></li>
+                <li><a href="#about">За мен</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#vacations">Почивки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="intro">
+            <h2>Добре дошли в света на модата и почивките</h2>
+            <p>Тук ще откриеш вдъхновение за своя стил и най-добрите дестинации за почивка.</p>
+        </section>
+
+        <section id="about" class="about">
+            <h2>За мен</h2>
+            <div class="about-info">
+                <p><strong>Име:</strong> Милена Русева</p>
+                <p><strong>Телефон:</strong> <a href="tel:+359123456789">+359 123 456 789</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/mruseva" target="_blank">mruseva</a></p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Услуги</h2>
+            <div class="service-filters">
+                <label for="service-filter">Филтрирай по категория:</label>
+                <select id="service-filter" onchange="filterServices()">
+                    <option value="all">Всички</option>
+                    <option value="fashion">Мода</option>
+                    <option value="vacation">Почивки</option>
+                </select>
+            </div>
+
+            <div id="service-list" class="service-list">
+                <div class="service fashion">
+                    <h3>Модни консултации</h3>
+                    <p>Предлагам консултации за избор на дрехи, стил и аксесоари.</p>
+                </div>
+                <div class="service vacation">
+                    <h3>Организиране на почивки</h3>
+                    <p>Планирам и организирам почивки на най-добрите места по света.</p>
+                </div>
+                <div class="service fashion">
+                    <h3>Шопинг турове</h3>
+                    <p>Предлагам персонализирани шопинг турове в най-добрите модни магазини.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vacations" class="vacations">
+            <h2>Нашите Почивки</h2>
+            <div class="vacation-gallery">
+                <img src="images/vacation1.jpg" alt="Почивка 1">
+                <img src="images/vacation2.jpg" alt="Почивка 2">
+                <img src="images/vacation3.jpg" alt="Почивка 3">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Контакти</h2>
+            <form>
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Съобщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Изпрати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Моден Стил и Почивки. Всички права запазени.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
